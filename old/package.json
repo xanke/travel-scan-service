@@ -1,0 +1,36 @@
+{
+    "name": "travel-scan",
+    "devDependencies": {
+      "babel-cli": "^6.26.0",
+      "babel-polyfill": "^6.26.0",
+      "babel-preset-es2015": "^6.24.1",
+      "babel-preset-stage-3": "^6.24.1",
+      "express": "^4.14.0",
+      "mysql": "^2.12.0",
+      "node-pre-gyp": "^0.6.32",
+      "node-schedule": "^1.2.0",
+      "node-uuid": "^1.4.7",
+      "request": "^2.79.0",
+      "serialport": "^4.0.6",
+      "socket.io": "^1.7.1",
+      "sockjs": "^0.3.18",
+      "superagent-proxy": "^1.0.2",
+      "ws": "^1.1.1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "config-lite": "2.1.0",
+      "mongolass": "3.1.5",
+      "babel-core": "^6.20.0",
+      "babel-preset-es2015": "^6.18.0",
+      "cheerio": "^1.0.0-rc.2",
+      "colors": "^1.1.2",
+      "https": "^1.0.0",
+      "iconv-lite": "^0.4.15",
+      "moment": "^2.17.1",
+      "superagent": "^3.7.0",
+      "underscore": "^1.8.3"
+    }
+  }
+  
