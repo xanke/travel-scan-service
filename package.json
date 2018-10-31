@@ -1,6 +1,6 @@
 {
   "name": "travel-scan-service",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "",
   "private": true,
   "dependencies": {
@@ -26,7 +26,7 @@
     "node": ">=8.9.0"
   },
   "scripts": {
-    "start": "egg-scripts start --daemon --title=travel-scan-service",
+    "start": "egg-scripts start --port=80 --title=travel-scan-service",
     "stop": "egg-scripts stop --title=travel-scan-service",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
@@ -44,6 +44,6 @@
     "type": "git",
     "url": ""
   },
-  "author": "",
+  "author": "xank@qq.com",
   "license": "MIT"
 }
