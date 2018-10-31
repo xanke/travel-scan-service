@@ -11,6 +11,10 @@ class HomeController extends Controller {
   async install() {
     await this.ctx.model.Flow.sync({ force: true });
   }
+
+  async scan() {
+    this.ctx.body = await this.ctx.service.scan.scan();
+  }
 }
 
 module.exports = HomeController;

@@ -1,4 +1,5 @@
 'use strict';
+const moment = require('moment');
 
 module.exports = app => {
   const { STRING, DATE, INTEGER } = app.Sequelize;
@@ -6,11 +7,7 @@ module.exports = app => {
   const Flow = app.model.define(
     'flow',
     {
-      id: {
-        type: INTEGER,
-        primaryKey: true,
-      },
-      cid: {
+      code: {
         type: INTEGER,
         allowNull: false,
       },
@@ -18,9 +15,16 @@ module.exports = app => {
         type: INTEGER,
         defaultValue: 0,
       },
+      maxNum: {
+        type: INTEGER,
+        defaultValue: 0,
+      },
       utime: {
         type: DATE,
         allowNull: false,
+        get() {
+          return moment(this.getDataValue('utime')).format('YYYY-MM-DD HH:mm:ss');
+        },
       },
       date: {
         type: DATE,
