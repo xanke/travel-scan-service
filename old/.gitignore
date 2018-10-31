@@ -1,5 +1,0 @@
-_notes
-*.log
-.DS_Store
-node_modules
-yarn.lock
