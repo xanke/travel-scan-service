@@ -5,7 +5,7 @@ const { Subscription } = require('egg');
 class Scan extends Subscription {
   static get schedule() {
     return {
-      interval: '120s',
+      interval: '10s',
       type: 'all',
     };
   }
