@@ -30,16 +30,16 @@ module.exports = app => {
         return;
       }
 
-      const utime = creates[0].utime;
-      const lastData = await this.ctx.model.Flow.findOne({
-        order: [[ 'utime', 'DESC' ]],
-      });
+      // const utime = creates[0].utime;
+      // const lastData = await this.ctx.model.Flow.findOne({
+      //   order: [[ 'utime', 'DESC' ]],
+      // });
 
       // 判断记录时间是否重复或小于记录值
-      if (lastData && utime <= lastData.utime) {
-        console.log(utime, '重复');
-        return;
-      }
+      // if (lastData && utime <= lastData.utime) {
+      //   console.log(utime, '重复');
+      //   return;
+      // }
       this.ctx.model.Flow.bulkCreate(creates);
 
       console.log(utime, 'SUCCESS');
