@@ -34,10 +34,10 @@ module.exports = app => {
     {
       indexes: [
         {
-          fields: [ 'date' ],
+          fields: [ 'date', 'code' ],
         },
         {
-          fields: [ 'utime' ],
+          fields: [ 'utime', 'code' ],
         },
       ],
     }
